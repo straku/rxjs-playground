@@ -1,0 +1,122 @@
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #f5f8fa;
+}
+
+button, a {
+  outline: none;
+}
+
+button:focus, a:focus,
+button:active, a:active {
+  text-decoration: underline;
+}
+
+.who-to-follow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 290px;
+  padding: 15px;
+
+  border: 1px solid #e1e8ed;
+  border-radius: 5px;
+
+  background-color: #fff;
+}
+
+.who-to-follow button {
+  border: none;
+  background-color: #fff;
+}
+
+.who-to-follow header {
+  margin-bottom: 10px;
+}
+
+.who-to-follow header h2 {
+  display: inline-block;
+
+  margin: 0;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 22px;
+}
+
+.who-to-follow header button {
+  position: relative;
+  padding: 0;
+  font-size: 12px;
+  color: #0084B4;
+  cursor: pointer;
+}
+
+.who-to-follow header button::before {
+  content: '·';
+  display: inline-block;
+  margin: 0 0.3em;
+  color: #292f33;
+  font-weight: bold;
+}
+
+.who-to-follow header button:hover {
+  text-decoration: underline;
+}
+
+.who-to-follow ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.who-to-follow ul li {
+  display: flex;
+  align-items: center;
+}
+
+.who-to-follow ul li:not(:first-child) {
+  margin-top: 10px;
+}
+
+.who-to-follow ul li img {
+  width: 48px;
+  height: 48px;
+  border-radius: 5px;
+}
+
+.who-to-follow ul li a {
+  flex: 1;
+  margin-left: 10px;
+  margin-right: 10px;
+  
+  color: #292f33;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.who-to-follow ul li a:hover,
+.who-to-follow ul li a:focus,
+.who-to-follow ul li a:active {
+  text-decoration: underline;
+}
+
+.who-to-follow ul li button {
+  color: #c1c8ce;
+  font-size: 12px;
+}
+
+.who-to-follow .placeholder .image {
+  width: 48px;
+  height: 48px;
+  border-radius: 5px;
+  background-color: #f1f1f1;
+}
+
+.who-to-follow .placeholder .login {
+  margin-left: 10px;
+  width: 50%;
+  height: 22px;
+  background-color: #f1f1f1;
+}
